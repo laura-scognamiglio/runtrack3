@@ -9,26 +9,32 @@ function jourtravaille(date)
 
   var oggi = today.toLocaleDateString('fr-FR', options);
   today.setUTCFullYear(2020);
+  
 
-  for(var i = 0; i < jour_ferie.length; i++) {
-    if (oggi == jour_ferie[i])
-    {
-      console.log("Le "+ oggi + " est un jour férié ")
-    }
-    else if(today.getDay() == 0 || today.getDay() == 6)
-    {
-      console.log("Le "+ oggi + " est un week-end")
-    }
-    else 
-    {
-      console.log("Le "+ oggi + " est jour travaillé")
-    }
- 
+  if(jour_ferie.includes(oggi)){
+    console.log("Le "+ oggi + " est un jour férié ")
   }
+  else if(today.getDay() == 0 || today.getDay() == 6)
+  {
+    console.log("Le "+ oggi + " est un week-end")
+  
+  }
+  else 
+  {
+    console.log("Le "+ oggi + " est un jour travaillé")
+    
+  }
+//   function in_array(needle, haystack) {
+//     for(var i in haystack) {
+//         if(haystack[i] == needle) return true;
+//     }
+//     return false;
+// }
+// arr.includes(searchElement)
 
  
 
 
 }
 
-jourtravaille('mercredi 1 janvier 2020');
+jourtravaille("12/26/2020");

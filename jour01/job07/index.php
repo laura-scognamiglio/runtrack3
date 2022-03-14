@@ -9,7 +9,7 @@
   </head>
   <body>
     
-    <button onclick= "jourtravaille()">clique</button>
+    <!-- <button onclick= "jourtravaille()">clique</button> -->
     
 </body>
 </html>
