@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +10,10 @@
 </head>
     <body>
         <main>
-            <p id="compteur">0</p>
-            <button id="button" >button</button>
+            <textarea id="keylogger" 
+            rows="5" cols="33">
+            test
+            </textarea>
         </main>
     </body>
 </html>
