@@ -1,28 +1,31 @@
 
-   document.addEventListener('DOMContentLoaded',(e) => {
-    console.log("DOM entièrement chargé et analysé");
+//    document.addEventListener('DOMContentLoaded',(e) => {
+//     console.log("DOM entièrement chargé et analysé");
 
-var textarea = document.getElementById("keylogger");
+// var textarea = document.getElementById("keylogger");
 
-document.addEventListener("keypress", addCharacter);
+// document.addEventListener("keypress", addCharacter);
 
-function addCharacter(event) {
-  textarea.value=textarea.value+event.key; 
-}
+// function addCharacter(event) {
+//   textarea.value=textarea.value+event.key; 
+// }
 
-});
+// });
 //    .focus sur l'élément 
 // mettre le domcontent qui doit TOUT englobé! 
 //methode concat
 
-// var texteArea = document.getElementById('keylogger')
+document.addEventListener('DOMContentLoaded',(e) => {
+  console.log("DOM entièrement chargé et analysé");
 
-//     document.addEventListener('keydown',function(event)
-//     {
-//          texteArea.value = texteArea.textcontent + event.key
-//     })
+  var texteArea = document.getElementById('keylogger')
+
+    document.addEventListener('keydown',function(event)
+    {
+         texteArea.value = texteArea.value + event.key
+    })
     
-    
+});
     
         
 
