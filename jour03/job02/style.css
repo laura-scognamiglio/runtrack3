@@ -1,0 +1,15 @@
+
+#rangee{
+    border-color: black;
+    border: 1px solid;
+    width: 70em;                    /* width of each container*/
+    height: 30em; 
+}
+
+#melangee{
+    border-color: black;
+    border: 1px solid;
+    width: 70em;                    /* width of each container*/
+    height: 30em; 
+    display: flex;
+}
