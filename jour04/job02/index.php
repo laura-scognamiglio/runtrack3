@@ -10,7 +10,6 @@
     <title>Document</title>
 </head>
     <body>
-  
         <button id="button">click</button>
     </body>
 </html>
