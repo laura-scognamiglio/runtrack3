@@ -1,0 +1,15 @@
+/* 
+Specifies the width of the targeted display area.
+"min-" and "max-" prefixes can be used.
+Example: media="screen and (min-width:500px)"
+*/
+
+@media (max-width:1280px){
+
+    body{
+        background-color: #ffff;
+    }
+
+}
+
+
