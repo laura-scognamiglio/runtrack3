@@ -1,59 +1,50 @@
 
 /* 
-Specifies the width of the targeted display area.
-"min-" and "max-" prefixes can be used.
-Example: media="screen and (min-width:500px)"
+
+Reprenez vos fichiers index.php et style.css. Ajoutez en haut de la page,
+un header qui contient une liste de trois liens : Accueil, Présentation,
+Contact. Lorsque la résolution est inférieure ou égale à 767. Les liens
+disparaissent pour laisser place à un hamburger button. Lorsque l’on clique
+sur celui-ci, les liens apparaissent. Si on re-clique, les liens disparaissent.
 */
+
 *{
-    margin: 10px;
+    margin: 0px;
 }
 
-div{
+
+
+#wrap {
+    font-family: sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-}
-section{
-    background-color: #88c1d0;
-    height: 200px;
-    width: 290px;
+    /* color: #f00; */
+    transition: transform .4s cubic-bezier(.25, .1, .25, 1);
 }
 
-@media screen and (min-width:768px) and (max-width:1599px){
-    body {
-        display: flex;
-        justify-content: center;
-      
-    }
-    section{
-        background-color: #ef9af7;
-        height: 100px;
-        width: 190px;
-    }
-    div{
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+#wrap:not(:target) {
+    transform: translate3d(-335px, 0, 0);
 }
 
-@media screen and (max-width:768px){
-    body{
-         display: flex;
-    justify-content: center;
-    }
-  
-}
-section{
-    background-color: #b0f79a;
-    height: 100px;
-    width: 190px;
-}
-div{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#wrap:target {
+    transform: translate3d(0, 0, 0);
 }
 
+#open,
+#close {
+    height: 44px;
+    text-align: right;
+    display: block;
+    margin-right: -30px;
+}
 
+#wrap:target #open,
+#wrap:not(:target) #close {
+    display: none;
+}
+
+#wrap:target #open {
+    display: none;
+}

@@ -11,11 +11,19 @@
     <title>Document</title>
 </head>
   <body>
+    <header>
+      <nav>
+        <a href="#wrap" id="open">
+          <a href="#" id="close">×</a>
+          <ul>
+            <a href="">Accueil</a>
+            <a href="">Presentation</a>
+            <a href="">Contact</a>
+          </ul>
+      </nav>
+    </header>
     <div>
-      <section class="section">blo</section>
-      <section class="section">bli</section>
-      <section class="section">ki</section>
-      <section class="section">kbhjh</section>
+    
     </div>
   </body>
 </html>
